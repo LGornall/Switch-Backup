@@ -45,7 +45,7 @@ For x = 0 to 2
 				sendEmail False, "Script timed out when running RUCF command", strCurrSwitchName
 				exit do 
 			else 
-					wscript.sleep 500
+				wscript.sleep 500
 			end if 
 		loop while readyForInput = False or intTimeOutCount < 4999
 	end if 
@@ -159,5 +159,3 @@ sub sendEmail(argWasSuccessful,argMessage,argSwitchName)
 	objMessage.TextBody = strEmailTxt 
 	objMessage.Send
 end sub
-
-
